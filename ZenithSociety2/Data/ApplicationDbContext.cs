@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using ZenithSociety2.Models;
+using ZenithDataLib.Models;
 
 namespace ZenithSociety2.Data
 {
@@ -14,6 +15,9 @@ namespace ZenithSociety2.Data
             : base(options)
         {
         }
+
+        public DbSet<ActivityCategory> ActivityCategories { get; set; }
+        public DbSet<Event> Events { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

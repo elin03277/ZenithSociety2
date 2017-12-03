@@ -5,9 +5,18 @@
     <UserSecretsId>aspnet-ZenithSociety2-1E1875D7-76AA-4871-BBD8-227CC09A59EC</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Models\ZenithDB\**" />
+    <Content Remove="Models\ZenithDB\**" />
+    <EmbeddedResource Remove="Models\ZenithDB\**" />
+    <None Remove="Models\ZenithDB\**" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" PrivateAssets="All" />
   </ItemGroup>

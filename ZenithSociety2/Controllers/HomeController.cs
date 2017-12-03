@@ -5,14 +5,30 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ZenithSociety2.Models;
+using ZenithSociety2.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace ZenithSociety2.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ApplicationDbContext _context;
+
+        public HomeController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            DateTime thisMonday = DateTime.Today.AddDays(((int)(DateTime.Today.DayOfWeek) * -1) + 1);
+            DateTime nextMonday = thisMonday.AddDays(7);
+
+            var upcomingEvents = _context.Events
+                                .Where(e => e.DateFrom >= thisMonday && e.DateFrom < nextMonday && e.IsActive == true)
+                                .OrderBy(e => e.DateFrom)
+                                .Include(e => e.ActivityCategory);
+            return View(upcomingEvents.ToList());
         }
 
         public IActionResult About()
