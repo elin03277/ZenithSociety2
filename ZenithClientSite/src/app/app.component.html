@@ -1,18 +1,20 @@
 <table *ngIf="events" border="1" class="table">
   <thead>
     <tr>
-      <th>Event ID</th>
+      <th><a href="#" (click)="onPrev()">Previous week</a></th>
       <th>From</th>
       <th>To</th>
       <th>Activity</th>
+      <th><a href="#" (click)="onNext()">Next week</a></th>      
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let e of filter(events); let i=index; ">
-      <td>{{e.eventId}}</td>
+    <tr *ngFor="let e of filter(events, -6); let i=index; ">
+      <td></td>
       <td>{{e.dateFrom}}</td>
       <td>{{e.dateTo}}</td>
       <td>{{e.activityCategory.activityDescription}}</td>
+      <td></td>
     </tr>
   </tbody>
 </table>
