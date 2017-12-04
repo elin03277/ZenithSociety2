@@ -130,8 +130,8 @@ namespace ZenithWebSite.Models
             {
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 17, 8, 30, 0),
-                    DateTo = new DateTime(2017, 10, 17, 10, 30, 0),
+                    DateFrom = new DateTime(2017, 12, 1, 8, 30, 0),
+                    DateTo = new DateTime(2017, 12, 1, 10, 30, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Senior's Golf Tournament"),
                     CreationDate = new DateTime(2017, 10, 17, 8, 30, 0),
@@ -139,8 +139,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 18, 8, 30, 0),
-                    DateTo = new DateTime(2017, 10, 18, 10, 30, 0),
+                    DateFrom = new DateTime(2017, 12, 1, 8, 30, 0),
+                    DateTo = new DateTime(2017, 12, 1, 10, 30, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Leadership General Assembly Meeting"),
                     CreationDate = new DateTime(2017, 10, 18, 8, 30, 0),
@@ -148,8 +148,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 20, 17, 30, 0),
-                    DateTo = new DateTime(2017, 10, 20, 19, 15, 0),
+                    DateFrom = new DateTime(2017, 12, 1, 17, 30, 0),
+                    DateTo = new DateTime(2017, 12, 1, 19, 15, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Youth Bowling Tournament"),
                     CreationDate = new DateTime(2017, 10, 20, 17, 30, 0),
@@ -157,8 +157,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 20, 19, 00, 0),
-                    DateTo = new DateTime(2017, 10, 20, 20, 00, 0),
+                    DateFrom = new DateTime(2017, 12, 1, 19, 00, 0),
+                    DateTo = new DateTime(2017, 12, 1, 20, 00, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Young ladies cooking lessons"),
                     CreationDate = new DateTime(2017, 10, 20, 19, 00, 0),
@@ -166,8 +166,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 21, 8, 30, 0),
-                    DateTo = new DateTime(2017, 10, 21, 10, 30, 0),
+                    DateFrom = new DateTime(2017, 12, 1, 8, 30, 0),
+                    DateTo = new DateTime(2017, 12, 1, 10, 30, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Youth craft lessons"),
                     CreationDate = new DateTime(2017, 10, 21, 8, 30, 0),
@@ -175,8 +175,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 21, 10, 30, 0),
-                    DateTo = new DateTime(2017, 10, 21, 12, 00, 0),
+                    DateFrom = new DateTime(2017, 12, 1, 10, 30, 0),
+                    DateTo = new DateTime(2017, 12, 1, 12, 00, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Youth choir practice"),
                     CreationDate = new DateTime(2017, 10, 21, 10, 30, 0),
@@ -184,8 +184,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 21, 12, 00, 0),
-                    DateTo = new DateTime(2017, 10, 21, 13, 30, 0),
+                    DateFrom = new DateTime(2017, 12, 8, 12, 00, 0),
+                    DateTo = new DateTime(2017, 12, 8, 13, 30, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Lunch"),
                     CreationDate = new DateTime(2017, 10, 21, 12, 00, 0),
@@ -193,8 +193,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 22, 7, 30, 0),
-                    DateTo = new DateTime(2017, 10, 22, 8, 30, 0),
+                    DateFrom = new DateTime(2017, 12, 8, 7, 30, 0),
+                    DateTo = new DateTime(2017, 12, 8, 8, 30, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Pancake Breakfast"),
                     CreationDate = new DateTime(2017, 10, 22, 7, 30, 0),
@@ -202,8 +202,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 22, 8, 30, 0),
-                    DateTo = new DateTime(2017, 10, 22, 10, 30, 0),
+                    DateFrom = new DateTime(2017, 12, 8, 8, 30, 0),
+                    DateTo = new DateTime(2017, 12, 8, 10, 30, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Swimming Lessons for the youth"),
                     CreationDate = new DateTime(2017, 10, 22, 8, 30, 0),
@@ -211,8 +211,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 22, 8, 30, 0),
-                    DateTo = new DateTime(2017, 10, 22, 10, 30, 0),
+                    DateFrom = new DateTime(2017, 12, 8, 8, 30, 0),
+                    DateTo = new DateTime(2017, 12, 8, 10, 30, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Swimming Exercise for parents"),
                     CreationDate = new DateTime(2017, 10, 22, 8, 30, 0),
@@ -220,8 +220,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 22, 10, 30, 0),
-                    DateTo = new DateTime(2017, 10, 22, 12, 00, 0),
+                    DateFrom = new DateTime(2017, 12, 8, 10, 30, 0),
+                    DateTo = new DateTime(2017, 12, 8, 12, 00, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Bingo Tournament"),
                     CreationDate = new DateTime(2017, 10, 22, 10, 30, 0),
@@ -229,8 +229,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 22, 12, 00, 0),
-                    DateTo = new DateTime(2017, 10, 22, 13, 00, 0),
+                    DateFrom = new DateTime(2017, 12, 8, 12, 00, 0),
+                    DateTo = new DateTime(2017, 12, 8, 13, 00, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "BBQ Lunch"),
                     CreationDate = new DateTime(2017, 10, 22, 12, 30, 0),
@@ -238,8 +238,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 22, 13, 00, 0),
-                    DateTo = new DateTime(2017, 10, 22, 18, 00, 0),
+                    DateFrom = new DateTime(2017, 12, 15, 13, 00, 0),
+                    DateTo = new DateTime(2017, 12, 15, 18, 00, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Garage Sale"),
                     CreationDate = new DateTime(2017, 10, 22, 13, 00, 0),
@@ -247,8 +247,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 23, 8, 30, 0),
-                    DateTo = new DateTime(2017, 10, 23, 10, 30, 0),
+                    DateFrom = new DateTime(2017, 12, 15, 8, 30, 0),
+                    DateTo = new DateTime(2017, 12, 15, 10, 30, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Senior's Golf Tournament"),
                     CreationDate = new DateTime(2017, 10, 17, 8, 30, 0),
@@ -256,8 +256,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 24, 8, 30, 0),
-                    DateTo = new DateTime(2017, 10, 24, 10, 30, 0),
+                    DateFrom = new DateTime(2017, 12, 15, 8, 30, 0),
+                    DateTo = new DateTime(2017, 12, 15, 10, 30, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Leadership General Assembly Meeting"),
                     CreationDate = new DateTime(2017, 10, 18, 8, 30, 0),
@@ -265,8 +265,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 26, 17, 30, 0),
-                    DateTo = new DateTime(2017, 10, 26, 19, 15, 0),
+                    DateFrom = new DateTime(2017, 12, 15, 17, 30, 0),
+                    DateTo = new DateTime(2017, 12, 15, 19, 15, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Youth Bowling Tournament"),
                     CreationDate = new DateTime(2017, 10, 20, 17, 30, 0),
@@ -274,8 +274,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 26, 19, 00, 0),
-                    DateTo = new DateTime(2017, 10, 26, 20, 00, 0),
+                    DateFrom = new DateTime(2017, 12, 15, 19, 00, 0),
+                    DateTo = new DateTime(2017, 12, 15, 20, 00, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Young ladies cooking lessons"),
                     CreationDate = new DateTime(2017, 10, 20, 19, 00, 0),
@@ -283,8 +283,8 @@ namespace ZenithWebSite.Models
                 },
                 new Event()
                 {
-                    DateFrom = new DateTime(2017, 10, 27, 8, 30, 0),
-                    DateTo = new DateTime(2017, 10, 27, 10, 30, 0),
+                    DateFrom = new DateTime(2017, 12, 15, 8, 30, 0),
+                    DateTo = new DateTime(2017, 12, 15, 10, 30, 0),
                     EnteredBy = "Eric Lin",
                     ActivityCategory = context.ActivityCategories.FirstOrDefault(a => a.ActivityDescription == "Youth craft lessons"),
                     CreationDate = new DateTime(2017, 10, 21, 8, 30, 0),
