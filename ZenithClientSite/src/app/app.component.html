@@ -1,0 +1,18 @@
+<table *ngIf="events" border="1" class="table">
+  <thead>
+    <tr>
+      <th>Event ID</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Activity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of filter(events); let i=index; ">
+      <td>{{e.eventId}}</td>
+      <td>{{e.eventFromDateTime}}</td>
+      <td>{{e.eventToDateTime}}</td>
+      <td>{{e.activityCategory.activityDescription}}</td>
+    </tr>
+  </tbody>
+</table>
