@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZenithDataLib.Models
+namespace ZenithWebSite.Models
 {
     public class Event
     {

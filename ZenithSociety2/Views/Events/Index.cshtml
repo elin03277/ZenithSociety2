@@ -1,23 +1,33 @@
-﻿@model IEnumerable<ZenithDataLib.Models.Event>
+﻿@model IEnumerable<ZenithWebSite.Models.Event>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Event";
 }
 
 <h2>Index</h2>
 
+@if (this.User.IsInRole("Admin"))
+{
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+}
+
 <table class="table">
     <thead>
         <tr>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.ActivityCategory.ActivityDescription)
+                </th>
                 <th>
                     @Html.DisplayNameFor(model => model.DateFrom)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.DateTo)
                 </th>
+@if (this.User.IsInRole("Admin"))
+{
                 <th>
                     @Html.DisplayNameFor(model => model.EnteredBy)
                 </th>
@@ -27,24 +37,31 @@
                 <th>
                     @Html.DisplayNameFor(model => model.IsActive)
                 </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ActivityCategory)
-            </th>
+}
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.ActivityCategory.ActivityDescription)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.DateFrom)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateTo)
-            </td>
+@if (this.User.IsInRole("Admin"))
+{
             <td>
                 @Html.DisplayFor(modelItem => item.EnteredBy)
             </td>
+}
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTo)
+            </td>
+@if (this.User.IsInRole("Admin"))
+{
             <td>
                 @Html.DisplayFor(modelItem => item.CreationDate)
             </td>
@@ -52,13 +69,11 @@
                 @Html.DisplayFor(modelItem => item.IsActive)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ActivityCategory.ActivityCategoryId)
-            </td>
-            <td>
                 <a asp-action="Edit" asp-route-id="@item.EventId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.EventId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.EventId">Delete</a>
             </td>
+}
         </tr>
 }
     </tbody>

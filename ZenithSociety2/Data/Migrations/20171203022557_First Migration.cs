@@ -61,12 +61,7 @@ namespace ZenithSociety2.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Events", x => x.EventId);
-                    table.ForeignKey(
-                        name: "FK_Events_ActivityCategories_ActivityCategoryId",
-                        column: x => x.ActivityCategoryId,
-                        principalTable: "ActivityCategories",
-                        principalColumn: "ActivityCategoryId",
-                        onDelete: ReferentialAction.Cascade);
+                    
                 });
 
             migrationBuilder.CreateIndex(
@@ -88,20 +83,12 @@ namespace ZenithSociety2.Data.Migrations
                 table: "Events",
                 column: "ActivityCategoryId");
 
-            migrationBuilder.AddForeignKey(
-                name: "FK_AspNetUserTokens_AspNetUsers_UserId",
-                table: "AspNetUserTokens",
-                column: "UserId",
-                principalTable: "AspNetUsers",
-                principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
+           
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_AspNetUserTokens_AspNetUsers_UserId",
-                table: "AspNetUserTokens");
+           
 
             migrationBuilder.DropTable(
                 name: "Events");

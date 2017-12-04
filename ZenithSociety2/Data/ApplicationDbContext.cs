@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using ZenithSociety2.Models;
-using ZenithDataLib.Models;
+using ZenithWebSite.Models;
 
 namespace ZenithSociety2.Data
 {
