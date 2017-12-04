@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class EventService {
 
-    private BASE_URL = "http://zenithnetcore.azurewebsites.net/api/Events"; 
+    private BASE_URL = "http://aspzenithsociety2.azurewebsites.net/api/eventsapi"; 
 
     constructor(private http: Http) { } 
 

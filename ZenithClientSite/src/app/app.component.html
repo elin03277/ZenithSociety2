@@ -10,8 +10,8 @@
   <tbody>
     <tr *ngFor="let e of filter(events); let i=index; ">
       <td>{{e.eventId}}</td>
-      <td>{{e.eventFromDateTime}}</td>
-      <td>{{e.eventToDateTime}}</td>
+      <td>{{e.dateFrom}}</td>
+      <td>{{e.dateTo}}</td>
       <td>{{e.activityCategory.activityDescription}}</td>
     </tr>
   </tbody>
