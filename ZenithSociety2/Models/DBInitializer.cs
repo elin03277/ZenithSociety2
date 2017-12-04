@@ -13,7 +13,7 @@ namespace ZenithWebSite.Models
         public static async Task Initialize(ApplicationDbContext context, UserManager<ApplicationUser> userManager,
         RoleManager<IdentityRole> roleManager)
         {
-            context.Database.EnsureCreated();
+            
 
             // Look for any users.
             if (context.Users.Any() && context.ActivityCategories.Any())
