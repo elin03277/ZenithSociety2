@@ -22,4 +22,13 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.getEvents();
     }
+
+    filter(allEvents: Event[]): Event[] {
+        let result: Event[] = [];
+
+        result = allEvents;
+        // filter by week
+
+        return result;
+    }
 }

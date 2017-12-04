@@ -1,4 +1,4 @@
-<table *ngIf="events" border="1">
+<table *ngIf="events" border="1" class="table">
   <thead>
     <tr>
       <th>Event ID</th>
@@ -8,7 +8,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let e of events; let i=index; ">
+    <tr *ngFor="let e of filter(events); let i=index; ">
       <td>{{e.eventId}}</td>
       <td>{{e.eventFromDateTime}}</td>
       <td>{{e.eventToDateTime}}</td>
