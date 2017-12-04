@@ -7,6 +7,11 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
+using ZenithSociety2.Data;
+using Microsoft.AspNetCore.Identity;
+using ZenithSociety2.Models;
+using ZenithWebSite.Models;
 
 namespace ZenithSociety2
 {
@@ -14,7 +19,22 @@ namespace ZenithSociety2
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+
+            var host = BuildWebHost(args);
+
+            using (var scope = host.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+
+                var context = services.GetRequiredService<ApplicationDbContext>();
+                var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+                var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+
+                DBInitializer.Initialize(context, userManager, roleManager).Wait();
+                
+            }
+
+            host.Run();
         }
 
         public static IWebHost BuildWebHost(string[] args) =>

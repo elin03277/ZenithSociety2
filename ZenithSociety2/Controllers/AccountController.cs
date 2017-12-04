@@ -13,6 +13,7 @@ using Microsoft.Extensions.Options;
 using ZenithSociety2.Models;
 using ZenithSociety2.Models.AccountViewModels;
 using ZenithSociety2.Services;
+using ZenithSociety2.Data;
 
 namespace ZenithSociety2.Controllers
 {
@@ -61,7 +62,7 @@ namespace ZenithSociety2.Controllers
             {
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
-                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
+                var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
@@ -220,8 +221,12 @@ namespace ZenithSociety2.Controllers
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                const string memberRole = "Member";
+                var user = new ApplicationUser { UserName = model.Username, Email = model.Email };
                 var result = await _userManager.CreateAsync(user, model.Password);
+                //add role to user
+                await _userManager.AddToRoleAsync(user, memberRole);
+
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
